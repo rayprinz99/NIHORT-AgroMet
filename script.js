@@ -1,7 +1,9 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
+    window.addEventListener('load' , () => {
+    navigator.serviceWorker.register('./sw.js')
       .then(() => console.log("Service Worker Registered"))
       .catch((err) => console.log("Service Worker Failed", err));
+    });
   }
   
 document.getElementById('calcBtn').addEventListener('click', function() {
@@ -51,4 +53,3 @@ document.getElementById('calcBtn').addEventListener('click', function() {
     document.getElementById('resultsBoard').style.display = 'grid';
 
 });
-
