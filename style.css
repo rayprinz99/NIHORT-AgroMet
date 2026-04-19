@@ -1,0 +1,96 @@
+:root {
+    --primary: #4a90e2;
+    --bg: #f0f2f5;
+    --text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url("images.jpeg")
+    no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 { margin-bottom: 5px; font-size: 1.5rem; text-align: center; }
+.subtitle { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 25px; }
+
+.field { margin-bottom: 15px; }
+label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus { border-color: var(--primary); outline: none; }
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover { background-color: #357abd; }
+
+.results-hidden { display: none; }
+
+#resultsBoard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.card {
+    background: #f8f9fa;
+    padding: 15px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card.highlight { background: #eef6ff; border: 1px solid var(--primary); }
+.card h2 { margin: 5px 0; font-size: 1.2rem; color: var(--primary); }
+.card small { font-size: 0.7rem; text-transform: uppercase; color: #888; }
+
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+footer p {
+   font-size: 0.8rem;
+   color: #23368b;
+   margin: 0;
+}
+
+footer span {
+    color: var (--primary);
+    font-weight: bold;
+}
