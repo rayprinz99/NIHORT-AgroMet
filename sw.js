@@ -3,7 +3,7 @@ const ASSETS = [
   'index.html',
   'style.css',
   'script.js',
-  'logo.png',
+  'images.jpeg',
   'background.jpg'
 ];
 
