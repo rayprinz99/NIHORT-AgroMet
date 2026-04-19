@@ -1,10 +1,10 @@
 const CACHE_NAME = 'NIHORT AgroMet Atmospheric Calculator';
 const ASSETS = [
-  'index.html',
-  'style.css',
-  'script.js',
-  'images.jpeg',
-  'background.jpg'
+    "./",
+    "./index.html",
+    "./style.css",
+    "./script.js",
+    "./images.jpeg"
 ];
 
 self.addEventListener('install', (event) => {
