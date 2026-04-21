@@ -1,3 +1,6 @@
+self.addEventListener('activate', event => {
+    event.waitUntil(clients.claim());
+});
 const CACHE_NAME = 'NIHORT AgroMet Psychrometric Calculator';
 const ASSETS = [
     "./",
