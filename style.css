@@ -94,3 +94,21 @@ footer span {
     color: var (--primary);
     font-weight: bold;
 }
+
+#installBtn {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    animation: pulse 2s infinite; 
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}

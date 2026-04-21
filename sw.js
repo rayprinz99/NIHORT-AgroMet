@@ -1,4 +1,4 @@
-const CACHE_NAME = 'NIHORT AgroMet Atmospheric Calculator';
+const CACHE_NAME = 'NIHORT AgroMet Psychrometric Calculator';
 const ASSETS = [
     "./",
     "./index.html",

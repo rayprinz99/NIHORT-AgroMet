@@ -1,3 +1,30 @@
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    
+    const installBtn = document.getElementById('installBtn');
+    if (installBtn) {
+        installBtn.style.display = 'block';
+    }
+    
+    console.log("System: Install prompt is ready.");
+});
+
+document.getElementById('installBtn')?.addEventListener('click', async () => {
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to install: ${outcome}`);
+        deferredPrompt = null;
+        document.getElementById('installBtn').style.display = 'none';
+    }
+});
+window.addEventListener('appinstalled', (evt) => {
+    console.log('System: NIHORT AgroMet Psychrometric Calculator App was installed.');
+    document.getElementById('installBtn').style.display = 'none';
+});
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load' , () => {
     navigator.serviceWorker.register('./sw.js')

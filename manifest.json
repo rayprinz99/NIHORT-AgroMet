@@ -1,5 +1,5 @@
 {
-    "name": "NIHORT AgroMet Atmospheric Calculator",
+    "name": "NIHORT AgroMet Psychrometric Calculator",
     "short_name": "NIHORT AgroMet Psychrometric Calculator",
     "start_url": "./index.html",
     "display": "standalone",
