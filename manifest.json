@@ -1,23 +1,23 @@
 {
-    "name": "NIHORT AgroMet Psychrometric Calculator",
-    "short_name": "NIHORT AgroMet Psychrometric Calculator",
-    "start_url": "./index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#2563eb",
-    "icons": [
+  "name": "NIHORT AgroMet Psychrometric Calculator",
+  "short_name": "AgroMet Psychrometric Calculator",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
     {
       "src": "images.jpeg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
       "src": "images.jpeg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any"
     }
-]
-  }
-  
+  ]
+}
